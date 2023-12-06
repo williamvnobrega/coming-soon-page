@@ -18,78 +18,129 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.logo {
-  margin: 66px 0 45px 0;
+
+@media screen and (max-width: 1440px) {
+  .logo {
+    margin: 66px 0 45px 0;
+  }
+  .logo > img {
+    width: 85px;
+  }
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 37px;
+  }
+  .text_container > h1 {
+    font-size: 48px;
+    color: var(--gray);
+    font-weight: 300;
+  }
+  .text_container > h1 > span {
+    font-weight: 700;
+  }
+  .text_container > p {
+    font-size: 20px;
+    
+  }
+  .button_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    margin-bottom: 87px;
+  }
+
+  .button_container > input {
+    width: 420px;
+    height: 58px;
+    margin-left: 0px;
+    border-radius: 50px;
+    left: 7%;
+    padding-left: 33px;
+  }
+  input::placeholder {
+    font-size: 16px;
+    position: absolute;
+    left: 7%;
+  }
+  .button_container > button {
+    font-size: 16px;
+    width: 200px;
+    height: 58px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+  }
+  #result{
+    margin-bottom: 10px;
+    position: absolute;
+    top: 29%;
+    left: 30%;
+  }
+  .illustration_container > img {
+    width: 640px;
+    margin-bottom: 75px;
+  }
+  
+  .icon_container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+  
+  .icon_container:hover{
+    cursor: pointer;
+  }
+  
+  main > span {
+    font-size: 12px;
+  }
+  
 }
-.logo > img {
-  width: 85px;
-}
-.text_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 17px;
-  margin-bottom: 37px;
-}
+
+/* /colors */
 .text_container > h1 {
-  font-size: 48px;
   color: var(--gray);
-  font-weight: 300;
 }
+
 .text_container > h1 > span {
-  font-weight: 700;
   color: var(--very-dark-blue);
 }
 .text_container > p {
-  font-size: 20px;
   color: var(--very-dark-blue);
 }
-.button_container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 87px;
-}
+
 .button_container > input {
-  width: 420px;
-  height: 58px;
-  margin-left: 0px;
-  border-radius: 50px;
   border: 1px solid var(--pale-blue);
 }
 
 input::placeholder {
-  font-size: 16px;
   color: var(--pale-blue);
-  position: absolute;
-  left: 7%;
 }
+
+input:focus{
+  outline: none;
+}
+
 .button_container > button {
-  font-size: 16px;
-  width: 200px;
-  height: 58px;
   color: white;
-  font-weight: 600;
-  border-radius: 50px;
-  border: none;
   background-color: var(--blue);
-  padding: 5px;
+ 
+}
+.button_container > button:hover{
+  box-shadow: 0px 7px 18px 0px hsl(223, 100%, 88%);
+  cursor: pointer;
 }
 
-.illustration_container > img {
-  width: 640px;
-  margin-bottom: 75px;
+#result{
+  color:var(--light-red);
+  font-style: italic;
 }
 
-.icon_container {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 34px;
-}
-
-main > span {
-  font-size: 12px;
-}
 
 .attribution {
   font-size: 11px;
@@ -99,6 +150,7 @@ main > span {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
+
 
 @media screen and (max-width: 375px) {
     .logo {
@@ -132,8 +184,8 @@ main > span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:8px;
         margin-bottom: 68px;
+        gap:0;
     }
     .button_container > input{
         width: 282px;
@@ -148,6 +200,13 @@ main > span {
         position:absolute;
         left:12%;
     }
+    #result{
+      font-size: 10px;
+      margin-bottom: 23px;
+      margin-top: 6px;
+      position:static;
+    }
+
     .button_container > button{
         font-size: 12px;
         width: 282px;
