@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [[Repository](https://github.com/williamvnobrega/responsive-landing-page.git)]
-- Live Site URL: [Live page](https://your-live-site-url.com)
+- Live Site URL: [Live page](https://williamvnobrega.github.io/responsive-landing-page/)
 
 ### Built with
 
